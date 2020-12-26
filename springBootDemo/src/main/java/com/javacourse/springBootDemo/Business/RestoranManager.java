@@ -1,6 +1,6 @@
 package com.javacourse.springBootDemo.Business;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import com.javacourse.springBootDemo.Entity.Restoran;
 
@@ -14,7 +14,7 @@ public class RestoranManager implements IRestoranService {
 	}
 
 	@Override
-	public List<Restoran> getAll() {
+	public ArrayList<Restoran> getAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}

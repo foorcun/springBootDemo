@@ -1,6 +1,6 @@
 package com.javacourse.springBootDemo.DataAccess;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import com.javacourse.springBootDemo.Entity.Restoran;
 
@@ -9,7 +9,7 @@ public class ArrRestoranDal implements IRestoranDal {
 	
 	
 	@Override
-	public List<Restoran> getAll() {
+	public ArrayList<Restoran> getAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}

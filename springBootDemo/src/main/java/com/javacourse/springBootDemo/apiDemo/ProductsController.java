@@ -11,7 +11,7 @@ import com.javacourse.springBootDemo.Entity.Restoran;
 public class ProductsController {
 	
 	
-	Restoran restoran = new Restoran("habibi", "habhab");
+	Restoran restoran = new Restoran("habibi", "asd");
 	IRestoranService restoranManager = new RestoranManager(restoran);
 
 
