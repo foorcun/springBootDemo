@@ -9,9 +9,10 @@ public class ArrRestoranData  implements IRestoranData{
 
 	private static ArrRestoranData restoranData;
 
-	
+	// de facto databaseimiz
 	ArrayList<Restoran> restorans = new ArrayList<>();
 
+	
 
 	private ArrRestoranData(){
 
@@ -51,7 +52,8 @@ public class ArrRestoranData  implements IRestoranData{
 	@Override
 	public Restoran Get(int id) {
 		// TODO Auto-generated method stub
-		return null;
+		//return null;
+		return restorans.get(id);
 	}
 
 	@Override
