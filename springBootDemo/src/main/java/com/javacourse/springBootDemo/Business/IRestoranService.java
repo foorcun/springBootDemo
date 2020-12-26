@@ -8,7 +8,7 @@ import com.javacourse.springBootDemo.Entity.Restoran;
 
 public interface IRestoranService {
 
-	ArrayList<Restoran> getAll();
+	List<Restoran> getAll();
 	Restoran get(int id);
 	void add(Restoran restoran);
 	void update(int id,Restoran restoran);
