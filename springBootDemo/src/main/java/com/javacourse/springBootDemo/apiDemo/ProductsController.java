@@ -11,7 +11,7 @@ import com.javacourse.springBootDemo.Entity.Restoran;
 public class ProductsController {
 	
 	
-	Restoran restoran = new Restoran();
+	Restoran restoran = new Restoran("habibi", "habhab");
 	IRestoranService restoranManager = new RestoranManager(restoran);
 
 
@@ -20,7 +20,7 @@ public class ProductsController {
 	public String get() {
 		
 		//return "Laptopsadf";
-		return restoranManager.get().getName();
+		return restoranManager.get().getRestoranAdi();
 	}
 	
 	
