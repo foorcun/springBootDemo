@@ -1,7 +1,6 @@
 package com.javacourse.springBootDemo.FakeDatabase;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import com.javacourse.springBootDemo.Entity.Restoran;
 
@@ -44,9 +43,9 @@ public class ArrRestoranData  implements IRestoranData{
 	
 	
 	@Override
-	public List<Restoran> GetAll() {
+	public ArrayList<Restoran> GetAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return restorans;
 	}
 
 	@Override

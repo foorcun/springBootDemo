@@ -9,6 +9,9 @@ import com.javacourse.springBootDemo.Entity.Restoran;
 import com.javacourse.springBootDemo.FakeDatabase.ArrRestoranData;
 import com.javacourse.springBootDemo.FakeDatabase.IRestoranData;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RestController
 public class ProductsController {
 	
@@ -24,14 +27,14 @@ public class ProductsController {
 	public String get() {
 		
 		//return "Laptopsadf";
-		return restoranManager.get(1).getRestoranAdi();
+		return restoranManager.get(0).getRestoranAdi();
 	}
 	
 	
-	@GetMapping("/products")
-	public String get2() {
+	@GetMapping("/restorans")
+	public List<Restoran> get2() {
 		
-		return "Laptop 2";
+		return restoranManager.getAll();
 	}
 	
 	@GetMapping("/lalala")
