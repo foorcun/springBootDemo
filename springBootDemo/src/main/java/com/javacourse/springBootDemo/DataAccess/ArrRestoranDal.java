@@ -15,7 +15,7 @@ public class ArrRestoranDal implements IRestoranDal {
 	}
 
 	@Override
-	public Restoran get() {
+	public Restoran get(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -27,13 +27,13 @@ public class ArrRestoranDal implements IRestoranDal {
 	}
 
 	@Override
-	public void update(Restoran restoran) {
+	public void update(int id,Restoran restoran) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void delete(Restoran restoran) {
+	public void delete(int id) {
 		// TODO Auto-generated method stub
 		
 	}

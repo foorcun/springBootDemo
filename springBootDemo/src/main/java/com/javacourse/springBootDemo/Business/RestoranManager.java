@@ -3,14 +3,18 @@ package com.javacourse.springBootDemo.Business;
 import java.util.ArrayList;
 
 import com.javacourse.springBootDemo.Entity.Restoran;
+import com.javacourse.springBootDemo.FakeDatabase.IRestoranData;
 
 public class RestoranManager implements IRestoranService {
 
-	Restoran restoran = new Restoran("busi","businesss");
+	// RestoranData = arraylist for restorant
+	private IRestoranData restoranData;
+	
+	//Restoran restoran = new Restoran("busi","businesss");
 	
 	
-	public RestoranManager(Restoran restoran) {
-		this.restoran = restoran;
+	public RestoranManager(IRestoranData restoranData) {
+		this.restoranData = restoranData;
 	}
 
 	@Override
@@ -20,10 +24,11 @@ public class RestoranManager implements IRestoranService {
 	}
 	
 	@Override
-	public Restoran get() {
+	public Restoran get(int id) {
 		// TODO Auto-generated method stub
 		//return null;
-		return this.restoran;
+		//return this.restoranData.Get(id);
+		return this.restoranData.Get(id);
 	}
 
 	@Override
@@ -33,13 +38,13 @@ public class RestoranManager implements IRestoranService {
 	}
 
 	@Override
-	public void update(Restoran restoran) {
+	public void update(int id,Restoran restoran) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void delete(Restoran restoran) {
+	public void delete(int id) {
 		// TODO Auto-generated method stub
 		
 	}

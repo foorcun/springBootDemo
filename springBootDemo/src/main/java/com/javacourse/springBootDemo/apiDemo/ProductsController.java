@@ -6,13 +6,17 @@ import org.springframework.web.bind.annotation.RestController;
 import com.javacourse.springBootDemo.Business.IRestoranService;
 import com.javacourse.springBootDemo.Business.RestoranManager;
 import com.javacourse.springBootDemo.Entity.Restoran;
+import com.javacourse.springBootDemo.FakeDatabase.ArrRestoranData;
+import com.javacourse.springBootDemo.FakeDatabase.IRestoranData;
 
 @RestController
 public class ProductsController {
 	
 	
-	Restoran restoran = new Restoran("habibi", "asd");
-	IRestoranService restoranManager = new RestoranManager(restoran);
+	IRestoranData restorans = ArrRestoranData.CreateAsSingleton();
+	
+	//Restoran restoran = new Restoran("habibi", "asd");
+	IRestoranService restoranManager = new RestoranManager(restorans);
 
 
 
@@ -20,7 +24,7 @@ public class ProductsController {
 	public String get() {
 		
 		//return "Laptopsadf";
-		return restoranManager.get().getRestoranAdi();
+		return restoranManager.get(1).getRestoranAdi();
 	}
 	
 	

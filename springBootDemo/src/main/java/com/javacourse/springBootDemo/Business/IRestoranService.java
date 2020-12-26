@@ -9,9 +9,9 @@ import com.javacourse.springBootDemo.Entity.Restoran;
 public interface IRestoranService {
 
 	ArrayList<Restoran> getAll();
-	Restoran get();
+	Restoran get(int id);
 	void add(Restoran restoran);
-	void update(Restoran restoran);
-	void delete (Restoran restoran);
+	void update(int id,Restoran restoran);
+	void delete(int id);
 	
 }
