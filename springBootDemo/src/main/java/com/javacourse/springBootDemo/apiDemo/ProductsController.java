@@ -3,13 +3,24 @@ package com.javacourse.springBootDemo.apiDemo;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.javacourse.springBootDemo.Business.IRestoranService;
+import com.javacourse.springBootDemo.Business.RestoranManager;
+import com.javacourse.springBootDemo.Entity.Restoran;
+
 @RestController
 public class ProductsController {
+	
+	
+	Restoran restoran = new Restoran();
+	IRestoranService restoranManager = new RestoranManager(restoran);
+
+
 
 	@GetMapping("/")
 	public String get() {
 		
-		return "Laptop";
+		//return "Laptopsadf";
+		return restoranManager.get().getName();
 	}
 	
 	
