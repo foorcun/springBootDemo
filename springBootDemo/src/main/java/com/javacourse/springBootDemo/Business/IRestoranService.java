@@ -9,7 +9,7 @@ import com.javacourse.springBootDemo.Entity.Restoran;
 public interface IRestoranService {
 
 	List<Restoran> getAll();
-	Restoran get(int id);
+	Restoran getById(int id);
 	void add(Restoran restoran);
 	void update(int id,Restoran restoran);
 	void delete(int id);

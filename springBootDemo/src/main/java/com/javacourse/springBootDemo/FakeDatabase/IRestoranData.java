@@ -8,7 +8,7 @@ public interface IRestoranData {
 
 
 	List<Restoran> GetAll();
-	Restoran Get(int id);
+	Restoran getById(int id);
 	void Add(Restoran restoran);
 	void Update(int id,Restoran restoran);
 	void Delete(int id);
