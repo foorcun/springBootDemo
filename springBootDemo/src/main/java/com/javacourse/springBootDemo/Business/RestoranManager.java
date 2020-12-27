@@ -26,11 +26,11 @@ public class RestoranManager implements IRestoranService {
 	}
 	
 	@Override
-	public Restoran get(int id) {
+	public Restoran getById(int id) {
 		// TODO Auto-generated method stub
 		//return null;
 		//return this.restoranData.Get(id);
-		return this.restoranData.Get(id);
+		return this.restoranData.getById(id);
 	}
 
 	@Override

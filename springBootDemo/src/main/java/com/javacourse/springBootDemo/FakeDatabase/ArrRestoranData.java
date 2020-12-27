@@ -49,7 +49,7 @@ public class ArrRestoranData  implements IRestoranData{
 	}
 
 	@Override
-	public Restoran Get(int id) {
+	public Restoran getById(int id) {
 		// TODO Auto-generated method stub
 		//return null;
 		return restorans.get(id);

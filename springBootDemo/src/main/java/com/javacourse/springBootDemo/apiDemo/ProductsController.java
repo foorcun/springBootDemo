@@ -1,6 +1,7 @@
 package com.javacourse.springBootDemo.apiDemo;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.javacourse.springBootDemo.Business.IRestoranService;
@@ -27,21 +28,24 @@ public class ProductsController {
 	public String get() {
 		
 		//return "Laptopsadf";
-		return restoranManager.get(0).getRestoranAdi();
+		return restoranManager.getById(0).getRestoranAdi();
 	}
 	
 	
 	@GetMapping("/restorans")
-	public List<Restoran> get2() {
+	public List<Restoran> getAll() {
 		
 		return restoranManager.getAll();
 	}
 	
-	@GetMapping("/lalala")
-	public String get3() {
+	
+	@GetMapping("/restorans/{id}")
+	public Restoran getById(@PathVariable int id) {
 		
-		return "Laptop lalala";
+		return restoranManager.getById(id);
 	}
+	
+	
 	
 	
 }
