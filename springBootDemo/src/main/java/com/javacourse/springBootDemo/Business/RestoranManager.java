@@ -34,8 +34,10 @@ public class RestoranManager implements IRestoranService {
 	}
 
 	@Override
-	public void add(Restoran restoran) {
+	public Restoran add(Restoran restoran) {
 		// TODO Auto-generated method stub
+		restoran.setRestoranId("asdfasdfasdf");
+		return restoran;
 		
 	}
 

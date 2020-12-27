@@ -1,6 +1,7 @@
 package com.javacourse.springBootDemo.FakeDatabase;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import com.javacourse.springBootDemo.Entity.Restoran;
 
@@ -56,9 +57,10 @@ public class ArrRestoranData  implements IRestoranData{
 	}
 
 	@Override
-	public void Add(Restoran restoran) {
+	public void Add(String restoran) {
 		// TODO Auto-generated method stub
-		
+		Restoran r = new Restoran(restoran,restoran);
+		restorans.add(r);
 	}
 
 	@Override

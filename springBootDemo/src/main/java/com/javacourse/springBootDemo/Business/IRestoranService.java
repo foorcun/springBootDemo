@@ -10,7 +10,7 @@ public interface IRestoranService {
 
 	List<Restoran> getAll();
 	Restoran getById(int id);
-	void add(Restoran restoran);
+	Restoran add(Restoran restoran);
 	void update(int id,Restoran restoran);
 	void delete(int id);
 	
