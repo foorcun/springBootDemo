@@ -2,6 +2,7 @@ package com.javacourse.springBootDemo.apiDemo;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,6 +16,8 @@ import com.javacourse.springBootDemo.Entity.Restoran;
 import com.javacourse.springBootDemo.FakeDatabase.ArrRestoranData;
 import com.javacourse.springBootDemo.FakeDatabase.IRestoranData;
 
+
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api")
 public class ProductsController {
@@ -36,7 +39,8 @@ public class ProductsController {
 	}
 	
 	
-	@GetMapping("/restorans")
+//	@GetMapping("/restorans")
+	@GetMapping("/users")
 	public List<Restoran> getAll() {
 		
 		return restoranManager.getAll();
